@@ -1,12 +1,12 @@
 # FATEC DevDay 2026
 
-Esse repositório contém o material de apoio da palestra `O desenvolvedor na era da IA: O que mudou e como se preparar` do evento FATEC DevDay 2026.
+Este repositório contém o material de apoio da palestra `O desenvolvedor na era da IA: o que mudou e como se preparar` do evento FATEC DevDay 2026.
 
 # Markdown
 
-É uma linguagem de marcação leve utilizada para formatar textos de maneira simples. o formato de arquivo `.md` é amplamente utilizado para estruturar informações, documentações, instruções consumidas por modelos de linguagem **LLMs**.
+É uma linguagem de marcação leve utilizada para formatar textos de maneira simples. O formato de arquivo `.md` é amplamente utilizado para estruturar informações, documentações e instruções consumidas por modelos de linguagem (**LLMs**).
 
-Por ser texto simples o **Markdown** não exige interpretação de estruturas complexas como XML e é facilmente convertido em textos e tokens, ideal para dar contextos e instruções aos modelos de Inteligência Artificial.
+Por ser texto simples, o **Markdown** não exige interpretação de estruturas complexas como XML e é facilmente convertido em texto e tokens, sendo ideal para dar contexto e instruções aos modelos de Inteligência Artificial.
 
 [Documentação oficial CommonMark](https://spec.commonmark.org/0.31.2/)
 
@@ -16,9 +16,9 @@ Por ser texto simples o **Markdown** não exige interpretação de estruturas co
 
 ---
 
-# Visual Code
+# Visual Studio Code
 
-Ambiente de desenvolvimento leve e gratuito, multiplaforma e extensível. Utilizado por desenvolvedores para escrever, editar, executar, depurar e manter aplicações de software.
+Ambiente de desenvolvimento leve e gratuito, multiplataforma e extensível. Utilizado por desenvolvedores para escrever, editar, executar, depurar e manter aplicações de software.
 
 O VS Code é uma das principais ferramentas de desenvolvimento de software assistido por IA.
 
@@ -28,9 +28,9 @@ O VS Code é uma das principais ferramentas de desenvolvimento de software assis
 
 # GitHub Copilot
 
-É uma ferramenta de inteligência artificial desenvolvida pela **GitHub** em parceria com a **OpenAI** para desenvolvimento de software assistido por inteligência artificial.
+É uma ferramenta de inteligência artificial desenvolvida pelo **GitHub** em parceria com a **OpenAI** para desenvolvimento de software assistido por inteligência artificial.
 
-Ele funciona como um **assistente** de programação com IA, integrado a ferramentas como **Visual Code** e **GitHub**.
+Ela funciona como um **assistente** de programação com IA, integrada a ferramentas como **Visual Studio Code** e **GitHub**.
 
 Possui funcionalidades como:
 
@@ -62,7 +62,7 @@ O GitHub oferece plano gratuito para qualquer pessoa com uma conta pessoal no Gi
 
 ## GitHub Copilot Student
 
-Se você possui vínculo com uma instituição de enside e atende aos critérios de elegibilidade, pode solicitar o benefício educacional.
+Se você possui vínculo com uma instituição de ensino e atende aos critérios de elegibilidade, pode solicitar o benefício educacional.
 
 **Acesse:** [GitHub Education - Student Developer Pack](https://education.github.com/pack)
 
@@ -71,13 +71,13 @@ Se você possui vínculo com uma instituição de enside e atende aos critérios
 
 # Spec-Driven Development (SDD)
 
-O **Desenvolvimento Orientado por Especificações**, é uma técnica de desenvolvimento de software assistido por Inteligência Artificial, na qual a especificação do que deve ser construído vem antes da implementação do código.
+O **Desenvolvimento Orientado por Especificações** é uma técnica de desenvolvimento de software assistido por Inteligência Artificial, na qual a especificação do que deve ser construído vem antes da implementação do código.
 
 ## Como funciona?
 
-Você cria uma estrutura de documentos como fonte de verdade para orientar tantos os desenvolvedores de software quanto os agentes de IA (GitHub Copilot, Claude, Codex, Cursor etc.) a seguir as especificações.
+Você cria uma estrutura de documentos como fonte de verdade para orientar tanto os desenvolvedores de software quanto os agentes de IA (GitHub Copilot, Claude, Codex, Cursor etc.) a seguir as especificações.
 
-O processo geralmente segue as etapas:
+O processo geralmente segue estas etapas:
 
 ### 1. Especificar
 
@@ -99,16 +99,16 @@ Utilizar desenvolvedores ou agentes de IA para implementar as tarefas seguindo a
 
 Verificar se a implementação atende aos requisitos e critérios definidos.
 
-## Principais beneficios do SDD
+## Principais benefícios do SDD
 
-**Previsibilidade**: reduz ambiguidades durante o desenvolvimento.
-**Consistência**: mantém a implementação alinhada aos requisitos.
-**Rastreabilidade**: permite relacionar requisitos, tarefas e código.
-**Governança**: facilita revisões técnicas e auditorias.
-**Produtividade**: fornece contexto estruturado aos agentes de IA.
-**Manutenibilidade**: facilita evoluções sem perder as decisões originais.
+- **Previsibilidade**: reduz ambiguidades durante o desenvolvimento.
+- **Consistência**: mantém a implementação alinhada aos requisitos.
+- **Rastreabilidade**: permite relacionar requisitos, tarefas e código.
+- **Governança**: facilita revisões técnicas e auditorias.
+- **Produtividade**: fornece contexto estruturado aos agentes de IA.
+- **Manutenibilidade**: facilita evoluções sem perder as decisões originais.
 
-## Referências para estudos
+## Referências para estudo
 
 1. [OpenSpec](https://openspec.dev/)
 
@@ -149,7 +149,7 @@ Instale o OpenSpec globalmente utilizando npm:
 npm install -g @fission-ai/openspec@latest
 ```
 
-Verifique se a instalação foi realizada:
+Verifique se a instalação foi concluída:
 
 ```bash
 openspec --version
@@ -321,8 +321,6 @@ Cursos **gratuitos** disponíveis na Microsoft Learn.
 | GitHub Copilot – Fundamentos Parte 1 | 5h17 | https://learn.microsoft.com/pt-br/training/paths/copilot/ |
 | GitHub Copilot – Fundamentos Parte 2 | 3h27 | https://learn.microsoft.com/pt-br/training/paths/gh-copilot-2 |
 | Introdução ao GitHub Copilot | 19 min | https://learn.microsoft.com/pt-br/training/modules/introduction-to-github-copilot/ |
-|   |   |
-
 ## 2. Microsoft Applied Skills – Credenciais gratuitas
 
 O Microsoft Applied Skills é um programa de credenciais práticas. Diferentemente das certificações tradicionais, você demonstra suas habilidades realizando uma avaliação baseada em laboratório.
@@ -335,11 +333,11 @@ O Microsoft Applied Skills é um programa de credenciais práticas. Diferentemen
 - Área: Desenvolvimento de software
 - Objetivo: Demonstrar capacidade de acelerar o desenvolvimento de aplicações utilizando GitHub Copilot.
 
-[Microsoft Applied Skills: acelerar o desenvolvimento assistido por IA usando GitHub Copilot](https://learn.microsoft.com/pt-br/credentials/applied-skills/accelerate-app-development-by-using-github-copilot/)
+[Microsoft Applied Skills: acelerar o desenvolvimento assistido por IA usando o GitHub Copilot](https://learn.microsoft.com/pt-br/credentials/applied-skills/accelerate-app-development-by-using-github-copilot/)
 
 ### Azure e Inteligência Artificial
 
-[Consulte o catálogo completo de Applied Skills com IA](https://learn.microsoft.com/pt-br/credentials/browse/?credential_types=applied%20skills&subjects=artificial-intelligence)
+[Consulte o catálogo completo de Applied Skills em IA](https://learn.microsoft.com/pt-br/credentials/browse/?credential_types=applied%20skills&subjects=artificial-intelligence)
 
 Áreas disponíveis:
 - Azure
@@ -363,14 +361,14 @@ O Microsoft Applied Skills é um programa de credenciais práticas. Diferentemen
 [Certificação GitHub Copilot](
 https://learn.microsoft.com/credentials/certifications/github-copilot/)
 
-**Observação**: a **certificação formal tem custo** e geralmente a preparação para o exame é gratuito.
+**Observação:** a **certificação formal tem custo** e geralmente a preparação para o exame é gratuita.
 
-[Guiga de estudo para o Exame GH-300: GitHub Copilot](https://learn.microsoft.com/pt-br/credentials/certifications/resources/study-guides/gh-300)
+[Guia de estudo para o Exame GH-300: GitHub Copilot](https://learn.microsoft.com/pt-br/credentials/certifications/resources/study-guides/gh-300)
 
 ## 4. Ordem recomendada de estudo
 
-1. GitHub Copilot Fundamentals – Parte 1.
-2. GitHub Copilot Fundamentals – Parte 2.
+1. GitHub Copilot – Fundamentos Parte 1.
+2. GitHub Copilot – Fundamentos Parte 2.
 3. Microsoft Applied Skills – GitHub Copilot.
 4. Applied Skills voltadas para Azure AI e desenvolvimento de agentes.
 
@@ -400,4 +398,3 @@ dotnet test backend/UrlShortener.slnx
 - `POST /api/urls` com `{ "originalUrl": "https://..." }` retorna `201` com `code` e `shortUrl`.
 - `GET /{code}` redireciona (`302`) para a URL original, ou `404` se o código não existir.
 - Os dados ficam em memória e são perdidos ao reiniciar a aplicação.
-- Desvio consciente: o provider InMemory não suporta migrations nem connection string. O nome do banco vem de `Persistence:DatabaseName`.
