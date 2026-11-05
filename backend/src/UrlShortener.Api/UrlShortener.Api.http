@@ -1,0 +1,12 @@
+@UrlShortener.Api_HostAddress = http://localhost:5254
+
+### Criar URL curta
+POST {{UrlShortener.Api_HostAddress}}/api/urls
+Content-Type: application/json
+
+{
+  "originalUrl": "https://learn.microsoft.com/dotnet"
+}
+
+### Redirecionar (substitua pelo code retornado acima)
+GET {{UrlShortener.Api_HostAddress}}/aB3dE9x
