@@ -1,25 +1,25 @@
 # Arquivos gerados pelo .NET na pasta backend
-/backend/**/bin/
-/backend/**/obj/
-/backend/**/out/
-/backend/**/TestResults/
-/backend/**/artifacts/
+/backend/src/**/bin/
+/backend/src/**/obj/
+/backend/src/**/out/
+/backend/src/**/TestResults/
+/backend/src/**/artifacts/
 
 # Visual Studio
-/backend/.vs/
-/backend/**/.vs/
-/backend/**/*.suo
-/backend/**/*.user
-/backend/**/*.userosscache
-/backend/**/*.sln.docstates
+/backend/src/.vs/
+/backend/src/**/.vs/
+/backend/src/**/*.suo
+/backend/src/**/*.user
+/backend/src/**/*.userosscache
+/backend/src/**/*.sln.docstates
 
 # NuGet
-/backend/**/packages/
-/backend/**/*.nupkg
-/backend/**/*.snupkg
+/backend/src/**/packages/
+/backend/src/**/*.nupkg
+/backend/src/**/*.snupkg
 
 # Logs e arquivos temporários
-/backend/**/*.log
-/backend/**/project.lock.json
-/backend/**/project.fragment.lock.json
-/backend/**/.
+/backend/src/**/*.log
+/backend/src/**/project.lock.json
+/backend/src/**/project.fragment.lock.json
+/backend/src/**/.
