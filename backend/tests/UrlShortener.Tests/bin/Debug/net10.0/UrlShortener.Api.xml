@@ -1,0 +1,80 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>UrlShortener.Api</name>
+    </assembly>
+    <members>
+        <member name="T:UrlShortener.Api.Controllers.RedirectController">
+            <summary>Redirecionamento de URLs curtas.</summary>
+        </member>
+        <member name="M:UrlShortener.Api.Controllers.RedirectController.#ctor(UrlShortener.Application.Interfaces.IShortUrlService)">
+            <summary>Redirecionamento de URLs curtas.</summary>
+        </member>
+        <member name="M:UrlShortener.Api.Controllers.RedirectController.Resolve(System.String,System.Threading.CancellationToken)">
+            <summary>Redireciona para a URL original associada ao código.</summary>
+            <response code="302">Redirecionamento para a URL original.</response>
+            <response code="404">Código inexistente.</response>
+        </member>
+        <member name="T:UrlShortener.Api.Controllers.UrlsController">
+            <summary>Criação de URLs curtas.</summary>
+        </member>
+        <member name="M:UrlShortener.Api.Controllers.UrlsController.#ctor(UrlShortener.Application.Interfaces.IShortUrlService)">
+            <summary>Criação de URLs curtas.</summary>
+        </member>
+        <member name="M:UrlShortener.Api.Controllers.UrlsController.Create(UrlShortener.Application.CreateShortUrlDto,System.Threading.CancellationToken)">
+            <summary>Cria uma URL curta a partir de uma URL original.</summary>
+            <response code="201">URL curta criada.</response>
+            <response code="400">URL original ausente ou inválida.</response>
+        </member>
+        <member name="T:UrlShortener.Api.Controllers.CreateShortUrlResponse">
+            <summary>Resposta da criação de URL curta.</summary>
+        </member>
+        <member name="M:UrlShortener.Api.Controllers.CreateShortUrlResponse.#ctor(System.String,System.String,System.String)">
+            <summary>Resposta da criação de URL curta.</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.OpenApi.Generated.DocumentationCommentIdHelper.CreateDocumentationId(System.Type)">
+            <summary>
+            Generates a documentation comment ID for a type.
+            Example: T:Namespace.Outer+Inner`1 becomes T:Namespace.Outer.Inner`1
+            </summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.OpenApi.Generated.DocumentationCommentIdHelper.CreateDocumentationId(System.Reflection.PropertyInfo)">
+            <summary>
+            Generates a documentation comment ID for a property.
+            Example: P:Namespace.ContainingType.PropertyName or for an indexer P:Namespace.ContainingType.Item(System.Int32)
+            </summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.OpenApi.Generated.DocumentationCommentIdHelper.CreateDocumentationId(System.Type,System.String)">
+            <summary>
+            Generates a documentation comment ID for a property given its container type and property name.
+            Example: P:Namespace.ContainingType.PropertyName
+            </summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.OpenApi.Generated.DocumentationCommentIdHelper.CreateDocumentationId(System.Reflection.MethodInfo)">
+            <summary>
+            Generates a documentation comment ID for a method (or constructor).
+            For example:
+              M:Namespace.ContainingType.MethodName(ParamType1,ParamType2)~ReturnType
+              M:Namespace.ContainingType.#ctor(ParamType)
+            </summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.OpenApi.Generated.DocumentationCommentIdHelper.GetTypeDocId(System.Type,System.Boolean,System.Boolean)">
+            <summary>
+            Generates a documentation ID string for a type.
+            This method handles nested types (replacing '+' with '.'),
+            generic types, arrays, pointers, by-ref types, and generic parameters.
+            The <paramref name="includeGenericArguments"/> flag controls whether
+            constructed generic type arguments are emitted, while <paramref name="omitGenericArity"/>
+            controls whether the generic arity marker (e.g. "`1") is appended.
+            </summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.OpenApi.Generated.DocumentationCommentIdHelper.NormalizeDocId(System.String)">
+            <summary>
+            Normalizes a documentation comment ID to match the compiler-style format.
+            Strips the return type suffix for ordinary methods but retains it for conversion operators.
+            </summary>
+            <param name="docId">The documentation comment ID to normalize.</param>
+            <returns>The normalized documentation comment ID.</returns>
+        </member>
+    </members>
+</doc>

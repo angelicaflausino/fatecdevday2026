@@ -1,0 +1,24 @@
+{
+  "version": 2,
+  "dgSpecHash": "CZrPYTglbn4=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\AngelicaFlausino\\source\\github_alpha2\\fatecdevday2026\\backend\\src\\UrlShortener.Infrastructure\\UrlShortener.Infrastructure.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\AngelicaFlausino\\.nuget\\packages\\fluentvalidation\\12.2.0\\fluentvalidation.12.2.0.nupkg.sha512",
+    "C:\\Users\\AngelicaFlausino\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\12.2.0\\fluentvalidation.dependencyinjectionextensions.12.2.0.nupkg.sha512",
+    "C:\\Users\\AngelicaFlausino\\.nuget\\packages\\microsoft.entityframeworkcore\\10.0.14\\microsoft.entityframeworkcore.10.0.14.nupkg.sha512",
+    "C:\\Users\\AngelicaFlausino\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\10.0.14\\microsoft.entityframeworkcore.abstractions.10.0.14.nupkg.sha512",
+    "C:\\Users\\AngelicaFlausino\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\10.0.14\\microsoft.entityframeworkcore.analyzers.10.0.14.nupkg.sha512",
+    "C:\\Users\\AngelicaFlausino\\.nuget\\packages\\microsoft.entityframeworkcore.inmemory\\10.0.14\\microsoft.entityframeworkcore.inmemory.10.0.14.nupkg.sha512",
+    "C:\\Users\\AngelicaFlausino\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\10.0.14\\microsoft.extensions.caching.abstractions.10.0.14.nupkg.sha512",
+    "C:\\Users\\AngelicaFlausino\\.nuget\\packages\\microsoft.extensions.caching.memory\\10.0.14\\microsoft.extensions.caching.memory.10.0.14.nupkg.sha512",
+    "C:\\Users\\AngelicaFlausino\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\10.0.14\\microsoft.extensions.configuration.abstractions.10.0.14.nupkg.sha512",
+    "C:\\Users\\AngelicaFlausino\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\10.0.14\\microsoft.extensions.dependencyinjection.10.0.14.nupkg.sha512",
+    "C:\\Users\\AngelicaFlausino\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\10.0.14\\microsoft.extensions.dependencyinjection.abstractions.10.0.14.nupkg.sha512",
+    "C:\\Users\\AngelicaFlausino\\.nuget\\packages\\microsoft.extensions.logging\\10.0.14\\microsoft.extensions.logging.10.0.14.nupkg.sha512",
+    "C:\\Users\\AngelicaFlausino\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\10.0.14\\microsoft.extensions.logging.abstractions.10.0.14.nupkg.sha512",
+    "C:\\Users\\AngelicaFlausino\\.nuget\\packages\\microsoft.extensions.options\\10.0.14\\microsoft.extensions.options.10.0.14.nupkg.sha512",
+    "C:\\Users\\AngelicaFlausino\\.nuget\\packages\\microsoft.extensions.primitives\\10.0.14\\microsoft.extensions.primitives.10.0.14.nupkg.sha512"
+  ],
+  "logs": []
+}

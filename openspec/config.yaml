@@ -1,0 +1,116 @@
+
+schema: spec-driven
+
+context: |
+  # Projeto
+  URL Shortener API.
+
+  # Estrutura do repositório
+  O backend está localizado em ./backend/.
+
+  Todas as implementações, alterações e novos arquivos
+  do backend devem ocorrer exclusivamente dentro dessa pasta.
+
+  # Agente responsável
+  DotNet Developer.
+
+  O agente DotNet Developer é responsável por todas
+  as implementações relacionadas ao backend.
+
+  # Tecnologias
+  - C#
+  - .NET 10
+  - ASP.NET Core Web API
+  - Controller-based APIs
+  - Entity Framework Core
+  - In-Memory Database do Entity Framework Core.
+
+  # Arquitetura
+  - Clean Architecture.
+  - SOLID.
+  - Injeção de dependência.
+  - Separação de responsabilidades.
+  - APIs REST.
+
+  # Estrutura de camadas
+  - Domain: entidades e regras de negócio.
+  - Application: casos de uso e contratos.
+  - Infrastructure: persistência e integrações.
+  - API: Controllers, filtros e configuração HTTP.
+
+  # Padrões obrigatórios de desenvolvimento
+  - Utilizar ASP.NET Core Web API baseado em Controllers.
+  - Utilizar Controllers derivados de ControllerBase.
+  - Utilizar atributos de roteamento HTTP.
+  - Utilizar DTOs para entrada e saída de dados.
+  - Utilizar injeção de dependência.
+  - Não utilizar Minimal APIs.
+  - Não mapear endpoints diretamente no Program.cs.
+  - Manter o Program.cs responsável pela configuração
+    e inicialização da aplicação.
+
+  # Banco de dados
+  - Entity Framework Core.
+  - Usar In-Memory Database do Entity Framework Core.
+  - Configurar a connection string por variável de ambiente.
+  - Utilizar migrations do Entity Framework Core.
+
+  # Testes
+  - xUnit.
+  - Testes unitários.
+  - Testes de integração.
+  - Garantir isolamento entre os testes.
+  - Utilizar banco de testes independente.
+
+  # Documentação
+  - OpenAPI.
+  - Documentação em português brasileiro.
+
+rules:
+  proposal:
+    - Escrever em português brasileiro.
+    - Descrever claramente objetivos e escopo.
+    - Identificar impactos técnicos.
+    - Identificar dependências externas.
+
+  specs:
+    - Utilizar cenários Given, When e Then.
+    - Definir critérios de aceitação verificáveis.
+    - Documentar requisitos funcionais e não funcionais.
+
+  design:
+    - Documentar decisões arquiteturais.
+    - Respeitar a Clean Architecture.
+    - Identificar dependências entre camadas.
+    - Utilizar Controllers para exposição HTTP.
+    - Documentar a estratégia de persistência.
+
+  tasks:
+    - Dividir o desenvolvimento em tarefas pequenas.
+    - Identificar dependências entre tarefas.
+    - Incluir testes automatizados.
+    - Identificar arquivos que deverão ser criados ou alterados.
+
+operations:
+  apply:
+    guidance:
+      - Delegar as implementações do backend ao agente DotNet Developer.
+      - Implementar exclusivamente dentro de ./backend/.
+      - Utilizar .NET 10.
+      - Utilizar ASP.NET Core Web API com Controllers.
+      - Não utilizar Minimal APIs.
+      - Não utilizar MapGet, MapPost, MapPut ou MapDelete.
+      - Não implementar endpoints diretamente no Program.cs.
+      - Respeitar a Clean Architecture.
+      - Utilizar Entity Framework Core com In Memory Database.
+      - Configurar connection strings por variáveis de ambiente.
+      - Criar migrations quando necessário.
+      - Implementar testes automatizados.
+      - Executar dotnet build e dotnet test.
+      - Não marcar tarefas como concluídas sem validação.
+
+  archive:
+    guidance:
+      - Verificar se a implementação atende às especificações.
+      - Manter a documentação atualizada.
+

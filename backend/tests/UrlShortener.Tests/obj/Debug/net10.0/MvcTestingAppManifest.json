@@ -1,0 +1,6 @@
+{
+  "UrlShortener.Api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Users\\AngelicaFlausino\\source\\github_alpha2\\fatecdevday2026\\backend\\src\\UrlShortener.Api",
+  "UrlShortener.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Users\\AngelicaFlausino\\source\\github_alpha2\\fatecdevday2026\\backend\\src\\UrlShortener.Application",
+  "UrlShortener.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Users\\AngelicaFlausino\\source\\github_alpha2\\fatecdevday2026\\backend\\src\\UrlShortener.Domain",
+  "UrlShortener.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Users\\AngelicaFlausino\\source\\github_alpha2\\fatecdevday2026\\backend\\src\\UrlShortener.Infrastructure"
+}

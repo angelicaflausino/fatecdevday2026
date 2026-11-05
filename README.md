@@ -122,6 +122,194 @@ Verificar se a implementação atende aos requisitos e critérios definidos.
 
 ---
 
+# OpenSpec + GitHub Copilot - Início Rápido
+
+## 1. O que é OpenSpec?
+
+O [OpenSpec](https://openspec.dev/) é um framework de **Spec-Driven Development (SDD)** que organiza o desenvolvimento de software orientado por especificações.
+
+Ele permite definir requisitos, documentar decisões técnicas, planejar tarefas e orientar agentes de IA antes da implementação do código.
+
+O objetivo é garantir que desenvolvedores e agentes de IA tenham um entendimento comum sobre o que deve ser construído.
+
+## 2. Pré-requisitos
+
+Antes de começar, você precisa de:
+
+- [Node.js](https://nodejs.org/) instalado.
+- [Visual Studio Code](https://code.visualstudio.com/).
+- Extensão do [GitHub Copilot](https://github.com/features/copilot) instalada e configurada.
+- Repositório do projeto aberto no VS Code.
+
+## 3. Instalação
+
+Instale o OpenSpec globalmente utilizando npm:
+
+```bash
+npm install -g @fission-ai/openspec@latest
+```
+
+Verifique se a instalação foi realizada:
+
+```bash
+openspec --version
+```
+
+## 4. Configuração do projeto
+
+Na raiz do repositório, execute:
+
+```bash
+openspec init --tools github-copilot
+```
+
+Esse comando inicializa o OpenSpec e configura sua integração com o GitHub Copilot.
+
+A estrutura criada será semelhante a:
+
+```text
+projeto/
+├── .github/
+│   ├── prompts/
+│   └── skills/
+├── openspec/
+│   ├── changes/
+│   │   └── archive/
+│   ├── specs/
+│   └── config.yaml
+├── src/
+└── README.md
+```
+
+Reinicie o VS Code para carregar os comandos de integração.
+
+## 5. Fluxo de trabalho
+
+O OpenSpec utiliza um fluxo incremental para transformar ideias em implementações.
+
+| Etapa | Comando | Objetivo |
+|---|---|---|
+| 1. Explorar | `/opsx-explore` | Explorar o problema e analisar alternativas. |
+| 2. Propor | `/opsx-propose` | Criar a proposta e os artefatos da mudança. |
+| 3. Revisar | — | Revisar requisitos, decisões e tarefas. |
+| 4. Implementar | `/opsx-apply` | Implementar seguindo as tarefas definidas. |
+| 5. Sincronizar | `/opsx-sync` | Atualizar as especificações principais. |
+| 6. Arquivar | `/opsx-archive` | Arquivar a mudança concluída. |
+
+**Importante:** os comandos `/opsx-*` são executados no chat do GitHub Copilot, não no terminal.
+
+## 6. Criando sua primeira funcionalidade
+
+**Passo 1 – Explorar a necessidade (opcional)**
+
+No chat do GitHub Copilot:
+
+```text
+/opsx-explore
+
+Quero adicionar uma funcionalidade de cadastro de usuários.
+Analise a estrutura atual do projeto e identifique
+as decisões necessárias antes da implementação.
+```
+
+**Passo 2 – Criar a proposta**
+
+```text
+/opsx-propose add-user-registration
+
+Crie a especificação para implementar o cadastro de usuários,
+considerando a arquitetura e os padrões existentes no projeto.
+```
+
+O OpenSpec criará os artefatos necessários para documentar a mudança:
+
+```text
+openspec/
+└── changes/
+    └── add-user-registration/
+        ├── proposal.md
+        ├── specs/
+        │   └── users/
+        │       └── spec.md
+        ├── design.md
+        └── tasks.md
+```
+
+**Passo 3 – Revisar a especificação**
+
+Antes de implementar, revise:
+
+- `proposal.md`: objetivo e escopo da funcionalidade.
+- `specs/`: requisitos funcionais e cenários esperados.
+- `design.md`: decisões e abordagem técnica.
+- `tasks.md`: lista de tarefas necessárias para implementação.
+
+Não avance para a implementação enquanto os requisitos e as decisões técnicas não estiverem alinhados.
+
+**Passo 4 – Implementar**
+
+No chat do GitHub Copilot:
+
+```text
+/opsx-apply
+```
+
+O agente utilizará os artefatos criados para implementar a funcionalidade e atualizar o progresso das tarefas.
+
+**Passo 5 – Sincronizar as especificações**
+
+Após validar a implementação:
+
+```text
+/opsx-sync
+```
+
+Esse comando sincroniza as especificações incrementais da mudança com as especificações principais do projeto.
+
+**Passo 6 – Arquivar**
+
+Após concluir a implementação:
+
+```text
+/opsx-archive
+```
+
+O OpenSpec arquivará a mudança concluída, mantendo o histórico do desenvolvimento.
+
+## 7. Comandos úteis do OpenSpec
+
+Os comandos abaixo são executados no terminal:
+
+| Comando | Descrição |
+|---|---|
+| `openspec list` | Lista as mudanças em andamento. |
+| `openspec list --specs` | Lista as especificações existentes. |
+| `openspec view` | Exibe um painel com o estado das especificações e mudanças. |
+| `openspec show <nome>` | Exibe os detalhes de uma especificação ou mudança. |
+| `openspec validate <nome>` | Valida uma mudança ou especificação. |
+| `openspec validate --all` | Valida todas as especificações e mudanças. |
+| `openspec update` | Atualiza os arquivos de integração do OpenSpec. |
+| `openspec version` | Exibe a versão e informações da instalação. |
+
+## 8. Boas práticas
+
+1. **Especifique antes de implementar:** não comece a desenvolver funcionalidades sem revisar seus requisitos.
+2. **Respeite a arquitetura:** as decisões técnicas devem seguir os padrões já estabelecidos no projeto.
+3. **Revise os artefatos:** a IA pode propor soluções incorretas ou incompletas.
+4. **Mantenha as especificações atualizadas:** documente alterações de comportamento e requisitos.
+5. **Implemente incrementalmente:** execute e valide as tarefas de forma organizada.
+6. **Versione os artefatos:** mantenha os diretórios `openspec/` e `.github/` no Git.
+
+## 9. Documentação oficial
+
+- [OpenSpec – Documentação oficial](https://openspec.dev/docs)
+- [OpenSpec – Quickstart](https://openspec.dev/docs/quickstart)
+- [OpenSpec – CLI Reference](https://openspec.dev/docs/cli)
+- [OpenSpec – Supported Tools](https://openspec.dev/docs/supported-tools)
+- [OpenSpec – GitHub Repository](https://github.com/Fission-AI/OpenSpec)
+
+---
+
 # Cursos e Certificações Microsoft – GitHub Copilot e Applied Skills
 
 ## 1. Cursos oficiais de GitHub Copilot
@@ -196,3 +384,20 @@ https://learn.microsoft.com/credentials/certifications/github-copilot/)
 
 ---
 
+
+# URL Shortener API (backend)
+
+API de encurtamento de URLs em .NET 10 (Clean Architecture, Controllers, EF Core InMemory).
+
+```bash
+# executar (http://localhost:5254, OpenAPI em /openapi/v1.json em Development)
+dotnet run --project backend/src/UrlShortener.Api --launch-profile http
+
+# testar
+dotnet test backend/UrlShortener.slnx
+```
+
+- `POST /api/urls` com `{ "originalUrl": "https://..." }` retorna `201` com `code` e `shortUrl`.
+- `GET /{code}` redireciona (`302`) para a URL original, ou `404` se o código não existir.
+- Os dados ficam em memória e são perdidos ao reiniciar a aplicação.
+- Desvio consciente: o provider InMemory não suporta migrations nem connection string. O nome do banco vem de `Persistence:DatabaseName`.

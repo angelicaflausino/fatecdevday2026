@@ -21,10 +21,8 @@ Antes de iniciar qualquer implementação, consulte:
 |---|---|
 | `.github/copilot-instructions.md` | Diretrizes gerais do projeto. |
 | `.github/instructions/backend.instructions.md` | Padrões técnicos e arquiteturais do backend. |
-| `specs/{feature}/spec.md` | Requisitos e comportamentos esperados. |
-| `specs/{feature}/plan.md` | Plano técnico e decisões arquiteturais. |
-| `specs/{feature}/tasks.md` | Tarefas de implementação. |
-| `specs/{feature}/research.md` | Pesquisas e decisões técnicas, quando disponível. |
+
+O agente deve trabalhar no contexto do backend com sdd seguindo os padrões do *openspec*.
 
 **Importante:** o arquivo `backend.instructions.md` é a fonte de verdade para os padrões técnicos do backend. Não redefina, duplique ou substitua essas instruções neste agente.
 
